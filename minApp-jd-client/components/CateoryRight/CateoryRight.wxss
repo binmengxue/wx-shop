@@ -1,0 +1,18 @@
+/* components/CateoryRight/CateoryRight.wxss */
+.goods_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 20rpx;
+}
+.goods_list navigator {
+  width: 33.33%;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.goods_list navigator image {
+  width: 50%;
+}
+.goods_list navigator .goods_name {
+  height: 40rpx;
+  overflow: hidden;
+}

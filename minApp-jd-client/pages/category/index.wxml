@@ -1,0 +1,17 @@
+<!--pages/category/category.wxml-->
+<view class="cates">
+  <SearchInput></SearchInput>
+  <view class="cates_container">
+    <scroll-view scroll-y class="left_menu"> 
+      <!-- cateorysList 父传子   getID是从子传父-->
+      <CateoryLeft cateorysList="{{cateorysList}}"  currentId="{{id}}" bind:getId="getIdEvent"></CateoryLeft>
+    </scroll-view>
+    <scroll-view class="right_content" scroll-y >
+       <view wx:if="{{ noData}}" class="noData">
+         <image  mode="widthFix" src="../../images/icon/wushuju.png"></image>
+         <view>没有查到相关数据！</view>
+         </view>
+       <CateoryRight wx:else goodsList="{{goodsList}}"></CateoryRight>
+    </scroll-view>
+  </view>
+</view>

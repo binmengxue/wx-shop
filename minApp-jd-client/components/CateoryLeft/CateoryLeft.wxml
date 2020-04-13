@@ -1,0 +1,12 @@
+<!--components/Cateory/CatepryLeft.wxml-->
+  <view 
+    class="menu_item {{item.category_id===currentId?'active':''}}" 
+    data-index="{{index}}" 
+    wx:for="{{cateorysList}}" 
+    wx:key="category_id" 
+    data-id="{{item.category_id}}" 
+    bindtap="handleItemTap" 
+  >
+      <view >{{item.category_name}}</view>
+  </view>
+

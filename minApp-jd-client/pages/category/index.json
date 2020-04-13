@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "CateoryLeft":"../../components/CateoryLeft/CateoryLeft",
+    "CateoryRight":"../../components/CateoryRight/CateoryRight"
+  }
+}

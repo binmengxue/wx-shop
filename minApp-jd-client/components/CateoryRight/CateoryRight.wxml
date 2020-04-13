@@ -1,0 +1,9 @@
+<!--components/CateoryRight/CateoryRight.wxml-->
+<view class="goods_list">
+    <navigator  
+    wx:for="{{goodsList}}"
+    wx:key="product_id" url="/pages/goods_list/index?mId={{item.category_id}}">
+        <image mode="widthFix" src="{{item.imgsrc}}"></image>
+        <view class="goods_name">{{item.category_name}}</view>
+    </navigator>
+</view>
