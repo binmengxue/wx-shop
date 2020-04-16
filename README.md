@@ -1,4 +1,5 @@
 # wx-shop
+##此项目是用微信小程序搭建的项目，
 ##minApp-jd-client 为微信小程序前端页面
 ##minApp-jd-server 后端接口
 ##admin.sql 为数据库
